@@ -1,0 +1,8 @@
+@import './assets/styles/colors.scss';
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $primary-color;
+  color: $text-white;
+  margin: 0;
+}
