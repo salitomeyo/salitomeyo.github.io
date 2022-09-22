@@ -21,32 +21,93 @@
         }
     }
 
-    .sidebar-nav {
-        padding: 8px;
-        flex-grow: 11;
+    .sidebar-nav, .sidebar-socials {
         display: flex;
         flex-direction: column;
-        align-items: center;
-
-        div {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .sidebar-links {
-            flex-grow: 8;
-            justify-content: space-evenly;
-        }
-
-        .sidebar-footer {
-            flex-grow: 4;
-            justify-content: flex-end;
-            padding-bottom: 10px;
-        }
+        width: 100%;
+        justify-content: center;
 
         a {
+            display: block;
+            position: relative;
             color: $icon-white;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .sidebar-nav {
+        flex-grow: 10;
+
+        a {
+            line-height: 70px;
+            height: 70px;
             font-size: 22px;
+
+            i {
+                transition: all 0.3s ease-out;
+            }
+
+            &:hover {
+                color: $accent-color;
+
+                svg {
+                    opacity: 0;
+                }
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            &:after {
+                content: '';
+                font-size: 12px;
+                letter-spacing: 2px;
+                opacity: 0;
+                bottom: 0;
+                position: absolute;
+                display: block;
+                width: 100%;
+                transition: all 0.3s ease-out;
+                font-family:'Times New Roman', Times, serif;
+            }
+        }
+
+        a.home-link {
+            &:after {
+                content: 'HOME';
+            }
+        }
+
+        a.about-link {
+            &:after {
+                content: 'ABOUT';
+            }
+        }
+
+        a.projects-link {
+            &:after {
+                content: 'PROJECTS';
+            }
+        }
+
+        a.contact-link {
+            &:after {
+                content: 'CONTACT';
+            }
+        }
+    }
+
+    .sidebar-socials {
+        padding: 0;
+        margin: 0;
+        flex-grow: 2;
+
+        a {
+            line-height: 40px;
+            height: 40px;
+            font-size: 18px;
 
             i {
                 transition: all 0.3s ease-out;
@@ -57,10 +118,5 @@
             }
         }
     }
-
-    .sidebar-footer {
-        flex-grow: 3;
-    }
-
 
 }
