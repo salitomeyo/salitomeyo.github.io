@@ -17,7 +17,7 @@ export const Home = () => {
     }, [])
 
     return(
-        <div className="container">
+        <div className="home-container">
             <AnimatedBlobOutline blobClass={"blob-container"}/>
                 <AnimatedBlobOutline blobClass={"blob-glow-outline"}/>
             <div>

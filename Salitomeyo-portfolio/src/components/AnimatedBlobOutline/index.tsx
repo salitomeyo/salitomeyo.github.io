@@ -3,8 +3,8 @@ import './index.scss';
 const AnimatedBlobOutline = ({ blobClass }) => {
     return(
         <div className={blobClass}>
-            <svg viewBox="0 0 640 470" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
-                <g transform="translate(148.72965240478516, -7.1440277099609375)">
+            <svg viewBox="0 0 520 470" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <g>
                     <defs>
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                         <stop offset="0%" className='blob-top-color'></stop>

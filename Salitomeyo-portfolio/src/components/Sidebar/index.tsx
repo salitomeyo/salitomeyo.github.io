@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
-import { faHome, faUser, faEnvelope, faPager } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faEnvelope, faStar } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faItchIo } from '@fortawesome/free-brands-svg-icons';
 
 import Logo from '../../assets/images/temporary-logo.png';
@@ -20,7 +20,7 @@ const Sidebar = () => {
                     <FontAwesomeIcon icon={faUser} />
                 </NavLink>
                 <NavLink to="/projects" className="projects-link">
-                    <FontAwesomeIcon icon={faPager} />
+                    <FontAwesomeIcon icon={faStar} />
                 </NavLink>
                 <NavLink to="/contact" className="contact-link">
                     <FontAwesomeIcon icon={faEnvelope} />
