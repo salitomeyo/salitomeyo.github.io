@@ -1,6 +1,6 @@
-import { Route, Routes } from "react-router-dom"
-import Layout from "../components/Layout";
+import { Route, Routes } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
+import { Home } from "../pages/Home";
 
 
 export const AppRouter = () => {
@@ -8,7 +8,7 @@ export const AppRouter = () => {
         <>
             <Sidebar />
             <Routes>
-                <Route path="/" element={ <Layout /> }/>
+                <Route path="/" element={ <Home /> }/>
             </Routes>
         </>
     )

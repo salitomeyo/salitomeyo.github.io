@@ -1,0 +1,30 @@
+@import '../../assets/styles/colors.scss';
+
+.container {
+    padding-left: 100px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+
+    h1 {
+        .name {
+            color: $accent-color;
+        }
+    }
+
+    h2 {
+        color: $icon-white;
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+    .btn-outline {
+        padding: 15px 30px;
+        background-color: transparent;
+        border: 1px solid $accent-color;
+        color: $accent-color;
+        font-size: 14px;
+    }
+}
