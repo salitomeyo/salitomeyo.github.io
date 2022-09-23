@@ -1,0 +1,20 @@
+
+.blob-container, .blob-glow-outline {
+    position: absolute;
+    height: 100vh;
+    width: 900px;
+    right: 0;
+
+    .blob-top-color {
+        stop-color: rgb(236, 98, 8);
+    }
+
+    .blob-bottom-color {
+        stop-color: rgb(255, 195, 113);
+    }
+}
+
+.blob-glow-outline {
+    filter: blur(15px);
+}
+
