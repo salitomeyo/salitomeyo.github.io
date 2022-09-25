@@ -6,7 +6,7 @@ import AnimatedLetters from '../../components/AnimatedLetters';
 import AnimatedBlob from '../../components/AnimatedBlob';
 import AnimatedBlobOutline from '../../components/AnimatedBlobOutline';
 
-export const Home = () => {
+export const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const nameArray2 = ['S', 'a', 'l', 'i', 't', 'o', 'm', 'e', 'y', 'o'];
     const nameArray3 = ['S', 'a', 'l', 'o', 'm', 'e', ' ', 'A', 'r', 'i', 's', 't', 'i', 'z', 'a', 'b', 'a', 'l'];
@@ -34,12 +34,10 @@ export const Home = () => {
                 <h2>Frontend Developer / Game Developer / Mobile Developer </h2>
 
                 <Link to="/contact">
-                    <button className='btn'>CONTACT ME</button>
+                    <button className='btn-outline'>CONTACT ME</button>
                 </Link>
                 </div>
             <div>
-                {/* <AnimatedBlob blobClass={"blob-container"}/>
-                <AnimatedBlob blobClass={"blob-glow"}/> */}
                 <img src={Logo} alt="logo" />
             </div>
         </ div>

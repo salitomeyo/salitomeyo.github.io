@@ -8,7 +8,7 @@
     justify-content: space-around;
 
     h1 {
-        font-size: 5vw;
+        font-size: 5.4vw;
 
         .name {
             color: $accent-color;
@@ -24,6 +24,7 @@
     }
 
     .btn-outline {
+        margin-top: 20px;
         padding: 15px 30px;
         background-color: transparent;
         border: 1px solid $accent-color;
@@ -35,6 +36,24 @@
             background-color: $accent-color;
             color: $text-white;
             transition: all 0.3s ease-out;
+        }
+    }
+
+    .btn {
+        margin-top: 20px;
+        padding: 15px 30px;
+        background-color: $accent-color;
+        border: 1px solid $accent-color;
+        border-radius: 25px;
+        color: $text-white;
+        font-size: 12px;
+        letter-spacing: 3px;
+
+        &:hover {
+            background-color: $accent-color;
+            color: $text-white;
+            transition: all 0.3s ease-out;
+            box-shadow: 0 0 10px 2px mix($accent-color, rgba(237, 100, 8, 0.7), 50%);
         }
     }
 }

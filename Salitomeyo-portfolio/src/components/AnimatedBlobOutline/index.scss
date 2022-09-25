@@ -1,3 +1,4 @@
+@import '../../assets/styles/colors.scss';
 
 .blob-container, .blob-glow-outline {
     position: absolute;
@@ -6,11 +7,11 @@
     right: 0;
 
     .blob-top-color {
-        stop-color: rgb(236, 98, 8);
+        stop-color: $accent-color;
     }
 
     .blob-bottom-color {
-        stop-color: rgb(255, 195, 113);
+        stop-color: $accent-highlight-color;
     }
 }
 
