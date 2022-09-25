@@ -21,7 +21,7 @@ export const Home = () => {
     return(
         <div className="home-container">
             <AnimatedBlobOutline blobClass={"blob-container"}/>
-                <AnimatedBlobOutline blobClass={"blob-glow-outline"}/>
+            <AnimatedBlobOutline blobClass={"blob-glow-outline"}/>
             <div>
                 <h1>
                     Hi <br /> I'm <span className='name'><AnimatedLetters 
@@ -37,7 +37,7 @@ export const Home = () => {
                     <button className='btn'>CONTACT ME</button>
                 </Link>
                 </div>
-            <div>
+            <div className='profile-pic-container'>
                 {/* <AnimatedBlob blobClass={"blob-container"}/>
                 <AnimatedBlob blobClass={"blob-glow"}/> */}
                 <img src={Logo} alt="logo" />
